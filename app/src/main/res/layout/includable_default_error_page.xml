@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/debug_info_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_waves"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin_16dp">
+
+        <TextView
+            android:id="@+id/error_quote"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/quote_array_item_6"
+            android:textColor="@color/primary_text"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/error_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/error_quote"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="@string/error_placeholder_excuse"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/error_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/error_description"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_error_button"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/button_label_error_try_again"
+            android:textColor="@color/primary_text"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+</RelativeLayout>

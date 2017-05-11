@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--
+    This is where we declare items that should not exist in the default flavour/ build
+    in order to generate the IDs anyway
+     -->
+    <item
+        android:id="@+id/action_open_dev_screen"
+        android:title="Dummy"
+        app:showAsAction="never"/>
+
+</menu>
